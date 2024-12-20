@@ -1,11 +1,11 @@
-# DyberGenshinAI-VITS
-[![license](https://img.shields.io/github/license/MuGemSt/DyberGenshinAI-VITS.svg)](https://github.com/MuGemSt/DyberGenshinAI-VITS/blob/main/LICENSE)
+# Dyber Genshin AI VITS
+[![license](https://img.shields.io/github/license/MuGemSt/dyber_genshin_ai_vits.svg)](https://github.com/MuGemSt/dyber_genshin_ai_vits/blob/main/LICENSE)
 [![bilibili](https://img.shields.io/badge/bilibili-BV1NNDfYGEFj-fc8bab.svg)](https://www.bilibili.com/video/BV1NNDfYGEFj)
 [![modelscope](https://img.shields.io/badge/ModelScope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/MuGemSt/hoyoTTS)
 
 DyberPet_GenshinImpact + KimiChat + BertVITS2
 
-![](https://github.com/MuGemSt/DyberGenshinAI-VITS/assets/20459298/e03c7bf4-bb49-434d-9145-dab1622ee215)
+![](https://github.com/MuGemSt/dyber_genshin_ai_vits/assets/20459298/e03c7bf4-bb49-434d-9145-dab1622ee215)
 
 ## Environment
 ```bash
@@ -16,8 +16,8 @@ pip install -r requirements.txt
 
 ## Download
 ```bash
-git clone git@github.com:MuGemSt/DyberGenshinAI-VITS.git
-cd DyberGenshinAI-VITS
+git clone git@github.com:MuGemSt/dyber_genshin_ai_vits.git
+cd dyber_genshin_ai_vits
 ```
 
 ## Run
