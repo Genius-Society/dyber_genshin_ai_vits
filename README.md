@@ -1,11 +1,11 @@
 # Dyber Genshin AI VITS
-[![license](https://img.shields.io/github/license/MuGemSt/dyber_genshin_ai_vits.svg)](https://github.com/MuGemSt/dyber_genshin_ai_vits/blob/main/LICENSE)
-[![bilibili](https://img.shields.io/badge/bilibili-BV1NNDfYGEFj-fc8bab.svg)](https://www.bilibili.com/video/BV1NNDfYGEFj)
-[![modelscope](https://img.shields.io/badge/ModelScope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/MuGemSt/hoyoTTS)
+[![license](https://img.shields.io/github/license/Genius-Society/dyber_genshin_ai_vits.svg)](https://github.com/Genius-Society/dyber_genshin_ai_vits/blob/main/LICENSE)
+[![bilibili](https://img.shields.io/badge/bilibili-BV1hergYRENX-fc8bab.svg)](https://www.bilibili.com/video/BV1hergYRENX)
+[![modelscope](https://img.shields.io/badge/ModelScope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/Genius-Society/hoyoTTS)
 
 DyberPet_GenshinImpact + KimiChat + BertVITS2
 
-![](https://github.com/MuGemSt/dyber_genshin_ai_vits/assets/20459298/e03c7bf4-bb49-434d-9145-dab1622ee215)
+![](https://github.com/Genius-Society/dyber_genshin_ai_vits/assets/20459298/e03c7bf4-bb49-434d-9145-dab1622ee215)
 
 ## Environment
 ```bash
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Download
 ```bash
-git clone git@github.com:MuGemSt/dyber_genshin_ai_vits.git
+git clone git@github.com:Genius-Society/dyber_genshin_ai_vits.git
 cd dyber_genshin_ai_vits
 ```
 

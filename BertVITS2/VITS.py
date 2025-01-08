@@ -37,7 +37,7 @@ from modelscope import snapshot_download
 
 class TTS:
     def __init__(self):
-        domain = "https://www.modelscope.cn/models/MuGemSt/hoyoTTS/resolve/master/"
+        domain = "https://www.modelscope.cn/models/Genius-Society/hoyoTTS/resolve/master/"
         model_path = download_file(domain + "G_78000.pth")
         self.hps = get_hparams_from_url(domain + "config.json")
         self.device = (

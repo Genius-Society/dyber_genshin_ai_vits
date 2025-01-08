@@ -25,13 +25,13 @@ else:
 
 # THEME_COLOR = "#73c896"
 
-HELP_URL = "https://github.com/MuGemSt/DyberGenshinAI-VITS/issues"
-PROJECT_URL = "https://github.com/MuGemSt/DyberGenshinAI-VITS"
-DEVDOC_URL = "https://github.com/MuGemSt/DyberGenshinAI-VITS/blob/module/README.md"
+HELP_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS/issues"
+PROJECT_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS"
+DEVDOC_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS/blob/module/README.md"
 VERSION = "v0.0.1"
-AUTHOR = "https://github.com/MuGemSt"
-CHARCOLLECT_LINK = "https://github.com/MuGemSt/DyberGenshinAI-VITS/tree/module"
-ITEMCOLLECT_LINK = "https://github.com/MuGemSt/DyberGenshinAI-VITS/tree/module"
+AUTHOR = "https://github.com/Genius-Society"
+CHARCOLLECT_LINK = "https://github.com/Genius-Society/DyberGenshinAI-VITS/tree/module"
+ITEMCOLLECT_LINK = "https://github.com/Genius-Society/DyberGenshinAI-VITS/tree/module"
 
 HP_TIERS = [0, 50, 80, 100]
 TIER_NAMES = ["Starving", "Hungry", "Normal", "Energetic"]
