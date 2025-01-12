@@ -1,7 +1,8 @@
 # Dyber Genshin AI VITS
 [![license](https://img.shields.io/github/license/Genius-Society/dyber_genshin_ai_vits.svg)](https://github.com/Genius-Society/dyber_genshin_ai_vits/blob/main/LICENSE)
+[![hf](https://img.shields.io/badge/huggingface-hoyoTTS-ffd21e.svg)](https://huggingface.co/spaces/Genius-Society/hoyoTTS)
+[![ms](https://img.shields.io/badge/modelscope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/Genius-Society/hoyoTTS)
 [![bilibili](https://img.shields.io/badge/bilibili-BV1hergYRENX-fc8bab.svg)](https://www.bilibili.com/video/BV1hergYRENX)
-[![modelscope](https://img.shields.io/badge/ModelScope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/Genius-Society/hoyoTTS)
 
 DyberPet_GenshinImpact + KimiChat + BertVITS2
 
