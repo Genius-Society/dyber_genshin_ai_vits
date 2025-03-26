@@ -1,7 +1,5 @@
 torch==2.4.1+cu118
 -f https://download.pytorch.org/whl/torch
-torchvision==0.19.1+cu118
--f https://download.pytorch.org/whl/torchvision
 PySide6-Fluent-Widgets==1.5.4
 modelscope==1.19
 pyside6==6.5.2
