@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/github/license/Genius-Society/dyber_genshin_ai_vits.svg)](https://github.com/Genius-Society/dyber_genshin_ai_vits/blob/main/LICENSE)
 [![hf](https://img.shields.io/badge/huggingface-hoyoTTS-ffd21e.svg)](https://huggingface.co/spaces/Genius-Society/hoyoTTS)
 [![ms](https://img.shields.io/badge/modelscope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/Genius-Society/hoyoTTS)
-[![bilibili](https://img.shields.io/badge/bilibili-BV1hergYRENX-fc8bab.svg)](https://www.bilibili.com/video/BV1hergYRENX)
+[![bili](https://img.shields.io/badge/bilibili-BV1hergYRENX-fc8bab.svg)](https://www.bilibili.com/video/BV1hergYRENX)
 
 DyberPet_GenshinImpact + KimiChat + BertVITS2
 
@@ -15,7 +15,7 @@ conda activate py311
 pip install -r requirements.txt
 ```
 
-## Download
+## Code download
 ```bash
 git clone git@github.com:Genius-Society/dyber_genshin_ai_vits.git
 cd dyber_genshin_ai_vits
