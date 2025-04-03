@@ -9,7 +9,8 @@ res/role/*
 *.DS_Store*
 *__pycache__*
 rename.sh
-test.py
+test.*
 *.pth
 .vscode/*
 .pytest_cache/*
+main.spec

@@ -33,6 +33,7 @@ def load_checkpoint(checkpoint_path, model, optimizer=None, skip_optimizer=False
         and checkpoint_dict["optimizer"] is not None
     ):
         optimizer.load_state_dict(checkpoint_dict["optimizer"])
+
     elif optimizer is None and not skip_optimizer:
         # else:      Disable this line if Infer and resume checkpoint,then enable the line upper
         new_opt_dict = optimizer.state_dict()
@@ -42,7 +43,6 @@ def load_checkpoint(checkpoint_path, model, optimizer=None, skip_optimizer=False
         optimizer.load_state_dict(new_opt_dict)
 
     saved_state_dict = checkpoint_dict["model"]
-
     if hasattr(model, "module"):
         state_dict = model.module.state_dict()
     else:
@@ -83,6 +83,7 @@ def save_checkpoint(model, optimizer, learning_rate, iteration, checkpoint_path)
         state_dict = model.module.state_dict()
     else:
         state_dict = model.state_dict()
+
     torch.save(
         {
             "model": state_dict,
@@ -118,7 +119,6 @@ def latest_checkpoint_path(dir_path, regex="G_*.pth"):
     f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
     x = f_list[-1]
     print(x)
-
     return x
 
 
@@ -145,7 +145,6 @@ def plot_spectrogram_to_numpy(spectrogram):
     data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep="")
     data = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
     plt.close()
-
     return data
 
 
@@ -178,7 +177,6 @@ def plot_alignment_to_numpy(alignment, info=None):
     data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep="")
     data = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
     plt.close()
-
     return data
 
 
@@ -190,6 +188,7 @@ def load_wav_to_torch(full_path):
 def load_filepaths_and_text(filename, split="|"):
     with open(filename, encoding="utf-8") as f:
         filepaths_and_text = [line.strip().split(split) for line in f]
+
     return filepaths_and_text
 
 
@@ -203,10 +202,8 @@ def get_hparams(init=True):
         help="JSON file for configuration",
     )
     parser.add_argument("-m", "--model", type=str, required=True, help="Model name")
-
     args = parser.parse_args()
     model_dir = os.path.join("./logs", args.model)
-
     if not os.path.exists(model_dir):
         os.makedirs(model_dir)
 
@@ -215,13 +212,15 @@ def get_hparams(init=True):
     if init:
         with open(config_path, "r") as f:
             data = f.read()
+
         with open(config_save_path, "w") as f:
             f.write(data)
+
     else:
         with open(config_save_path, "r") as f:
             data = f.read()
-    config = json.loads(data)
 
+    config = json.loads(data)
     hparams = HParams(**config)
     hparams.model_dir = model_dir
     return hparams
@@ -268,7 +267,6 @@ def get_hparams_from_dir(model_dir):
     config = json.loads(data)
     hparams = HParams(**config)
     hparams.model_dir = model_dir
-
     return hparams
 
 
@@ -388,7 +386,6 @@ class HParams:
 def get_text(text, language_str, hps, model_dir: str):
     norm_text, phone, tone, word2ph = clean_text(text, language_str)
     phone, tone, language = cleaned_text_to_sequence(phone, tone, language_str)
-
     if hps.data.add_blank:
         phone = commons.intersperse(phone, 0)
         tone = commons.intersperse(tone, 0)
@@ -404,7 +401,6 @@ def get_text(text, language_str, hps, model_dir: str):
     phone = torch.LongTensor(phone)
     tone = torch.LongTensor(tone)
     language = torch.LongTensor(language)
-
     return bert, phone, tone, language
 
 
