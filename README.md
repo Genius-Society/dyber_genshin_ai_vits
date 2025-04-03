@@ -26,6 +26,12 @@ cd dyber_genshin_ai_vits
 python main.py
 ```
 
+## Build
+```bash
+python build.py
+# Fetch the DyberGenshinAI-win10x64-*.zip from ./dist
+```
+
 ## Thanks
 - [DyberPet](https://github.com/ChaozhongLiu/DyberPet)
 - [DyberPet_GenshinImpact](https://github.com/ChaozhongLiu/DyberPet_GenshinImpact)

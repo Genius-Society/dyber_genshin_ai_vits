@@ -7,6 +7,7 @@ librosa==0.9.1
 numpy==1.26.4
 openai-whisper
 apscheduler
+pyinstaller
 pypinyin
 pyaudio
 openai

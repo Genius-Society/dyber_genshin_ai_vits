@@ -47,4 +47,4 @@ def rebuild(pk=False):
 
 
 if __name__ == "__main__":
-    rebuild()
+    rebuild(True)
