@@ -1,10 +1,5 @@
 torch==2.6.0+cu118
 -f https://mirrors.aliyun.com/pytorch-wheels/cu118
-PySide6-Fluent-Widgets==1.5.4
-modelscope[framework]==1.21.0
-pyside6==6.5.2
-librosa==0.9.1
-numpy==1.26.4
 openai-whisper
 apscheduler
 pyinstaller
@@ -15,3 +10,8 @@ pynput
 cn2an
 jieba
 tendo
+numpy==1.26.4
+pyside6==6.5.2
+librosa==0.9.1
+PySide6-Fluent-Widgets==1.5.4
+modelscope[framework]==1.21.0
