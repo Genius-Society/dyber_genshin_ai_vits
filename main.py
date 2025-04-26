@@ -1,6 +1,7 @@
 # coding:utf-8
 import os
 import sys
+import warnings
 import DyberPet.settings as settings
 from DyberPet.DyberPet import PetWidget
 from DyberPet.Notification import DPNote
@@ -133,6 +134,7 @@ class DyberPetApp(QApplication):
 
 
 if __name__ == "__main__":
+    warnings.filterwarnings("ignore")
     if platform == "win32":
         basedir = ""
     else:

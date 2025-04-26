@@ -24,14 +24,14 @@ else:
     CONFIGDIR = configdir
 
 # THEME_COLOR = "#73c896"
-
-HELP_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS/issues"
-PROJECT_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS"
-DEVDOC_URL = "https://github.com/Genius-Society/DyberGenshinAI-VITS/blob/module/README.md"
+REPO_NAME = "Genius-Society/dyber_genshin_ai_vits"
+HELP_URL = f"https://github.com/{REPO_NAME}/issues"
+PROJECT_URL = f"https://github.com/{REPO_NAME}"
+DEVDOC_URL = f"https://github.com/{REPO_NAME}/blob/module/README.md"
 VERSION = "v0.0.1"
-AUTHOR = "https://github.com/Genius-Society"
-CHARCOLLECT_LINK = "https://github.com/Genius-Society/DyberGenshinAI-VITS/tree/module"
-ITEMCOLLECT_LINK = "https://github.com/Genius-Society/DyberGenshinAI-VITS/tree/module"
+AUTHOR = f"https://github.com/{REPO_NAME.split('/')[0]}"
+CHARCOLLECT_LINK = f"https://github.com/{REPO_NAME}/tree/module"
+ITEMCOLLECT_LINK = f"https://github.com/{REPO_NAME}/tree/module"
 
 HP_TIERS = [0, 50, 80, 100]
 TIER_NAMES = ["Starving", "Hungry", "Normal", "Energetic"]
