@@ -36,12 +36,20 @@ def clean_cache(dirs=["./dist"]):
         os.makedirs(dir)
 
 
+def rm_pycaches(root_dir):
+    for dirpath, _, _ in os.walk(root_dir, topdown=False):
+        if dirpath.endswith("__pycache__"):
+            print(f"Delete {dirpath}")
+            shutil.rmtree(dirpath)
+
+
 def rebuild(pk=False):
     clean_cache()
     subprocess.run(["pyinstaller", "main.py"])
     shutil.copytree("./BertVITS2", "./dist/main/_internal/BertVITS2")
     shutil.copytree("./DyberPet", "./dist/main/DyberPet")
     shutil.copytree("./res", "./dist/main/res")
+    rm_pycaches("./dist/main")
     if pk:
         pack()
 
