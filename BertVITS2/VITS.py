@@ -37,9 +37,9 @@ from modelscope import snapshot_download
 
 class TTS:
     def __init__(self):
-        domain = "https://www.modelscope.cn/models/Genius-Society/hoyoTTS/resolve/master/"
-        model_path = download_file(domain + "G_78000.pth")
-        self.hps = get_hparams_from_url(domain + "config.json")
+        dom = "https://www.modelscope.cn/models/Genius-Society/hoyoTTS/resolve/master"
+        model_path = download_file(f"{dom}/G_78000.pth")
+        self.hps = get_hparams_from_url(f"{dom}/config.json")
         self.device = (
             "cuda:0"
             if torch.cuda.is_available()
@@ -50,7 +50,10 @@ class TTS:
             )
         )
         # 语言模型下载
-        self.model_dir = snapshot_download("dienstag/chinese-roberta-wwm-ext-large")
+        self.model_dir = snapshot_download(
+            "dienstag/chinese-roberta-wwm-ext-large",
+            cache_dir="./data",
+        )
         self.net_g = SynthesizerTrn(
             len(symbols),
             self.hps.data.filter_length // 2 + 1,
@@ -90,7 +93,6 @@ class TTS:
                 .numpy()
             )
             del x_tst, tones, lang_ids, bert, x_tst_lengths, speakers
-
             return audio
 
     def _tts_fn(
@@ -139,7 +141,6 @@ class TTS:
             return "", 0
 
         sr, audio_samples = concatenate_audios(audios, self.hps.data.sampling_rate)
-
         if self.stopping:
             return "", 0
 
