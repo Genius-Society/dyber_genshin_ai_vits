@@ -1,5 +1,6 @@
 # Dyber Genshin AI VITS
 [![license](https://img.shields.io/github/license/Genius-Society/dyber_genshin_ai_vits.svg)](./LICENSE)
+[![itch](https://img.shields.io/badge/release-itch.io-fa5c5c.svg)](https://genius-society.itch.io/dyber-genshin-ai-vits)
 [![hf](https://img.shields.io/badge/huggingface-hoyoTTS-ffd21e.svg)](https://huggingface.co/spaces/Genius-Society/hoyoTTS)
 [![ms](https://img.shields.io/badge/modelscope-hoyoTTS-624aff.svg)](https://www.modelscope.cn/studios/Genius-Society/hoyoTTS)
 [![bili](https://img.shields.io/badge/bilibili-BV1hergYRENX-fc8bab.svg)](https://www.bilibili.com/video/BV1hergYRENX)
