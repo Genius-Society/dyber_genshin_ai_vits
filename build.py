@@ -39,7 +39,7 @@ def clean_cache(dirs=["./dist"]):
 def rebuild(pk=False):
     clean_cache()
     subprocess.run(["pyinstaller", "main.py"])
-    shutil.copytree("./BertVITS2", "./dist/main/BertVITS2")
+    shutil.copytree("./BertVITS2", "./dist/main/_internal/BertVITS2")
     shutil.copytree("./DyberPet", "./dist/main/DyberPet")
     shutil.copytree("./res", "./dist/main/res")
     if pk:
